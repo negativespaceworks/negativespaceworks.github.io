@@ -64,15 +64,16 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 20;
-  transform: translateY(-100%);
+  transform: translate3d(0, -100%, 0);
   pointer-events: none;
-  transition: transform 0.4s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .home.js-reveal-header .site-header.is-visible {
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
   pointer-events: auto;
-  box-shadow: 0 1px 0 var(--color-border);
 }
 
 @media (prefers-reduced-motion: reduce) {
