@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <pattern id="unlitGrid" width="168" height="47" patternUnits="userSpaceOnUse">
+      <rect width="168" height="41" fill="#f17f1b"/>
+    </pattern>
+    <rect id="cell" width="168" height="41"/>
+  </defs>
+
+  <rect x="12" y="12" width="1230" height="1230" rx="226" fill="#f7821c"/>
+  <rect x="12" y="12" width="1230" height="1230" rx="226" fill="none" stroke="#ffd65c" stroke-width="4" opacity="0.55"/>
+
+  <g fill="url(#unlitGrid)">
+    <rect x="175" y="276" width="168" height="752"/><rect x="359" y="276" width="168" height="752"/><rect x="543" y="276" width="168" height="752"/><rect x="727" y="276" width="168" height="752"/><rect x="911" y="276" width="168" height="752"/>
+  </g>
+
+  <g fill="#44230f">
+    <use href="#cell" x="175" y="981"/><use href="#cell" x="175" y="934"/><use href="#cell" x="175" y="887"/>
+    <use href="#cell" x="359" y="981"/><use href="#cell" x="359" y="934"/><use href="#cell" x="359" y="887"/><use href="#cell" x="359" y="840"/><use href="#cell" x="359" y="793"/><use href="#cell" x="359" y="746"/>
+    <use href="#cell" x="543" y="981"/><use href="#cell" x="543" y="934"/><use href="#cell" x="543" y="887"/><use href="#cell" x="543" y="840"/><use href="#cell" x="543" y="793"/><use href="#cell" x="543" y="746"/><use href="#cell" x="543" y="699"/><use href="#cell" x="543" y="652"/>
+    <use href="#cell" x="727" y="981"/><use href="#cell" x="727" y="934"/><use href="#cell" x="727" y="887"/><use href="#cell" x="727" y="840"/><use href="#cell" x="727" y="793"/><use href="#cell" x="727" y="746"/><use href="#cell" x="727" y="699"/>
+    <use href="#cell" x="911" y="981"/><use href="#cell" x="911" y="934"/><use href="#cell" x="911" y="887"/><use href="#cell" x="911" y="840"/><use href="#cell" x="911" y="793"/><use href="#cell" x="911" y="746"/>
+  </g>
+
+  <g fill="#884d21">
+    <use href="#cell" x="175" y="840"/><use href="#cell" x="359" y="699"/><use href="#cell" x="543" y="605"/><use href="#cell" x="727" y="652"/><use href="#cell" x="911" y="699"/>
+  </g>
+  <g fill="#a86129">
+    <use href="#cell" x="175" y="793"/><use href="#cell" x="359" y="652"/><use href="#cell" x="543" y="558"/><use href="#cell" x="727" y="605"/><use href="#cell" x="911" y="652"/>
+  </g>
+
+  <g fill="#2d1509">
+    <use href="#cell" x="175" y="699"/><use href="#cell" x="359" y="558"/><use href="#cell" x="543" y="464"/><use href="#cell" x="727" y="511"/><use href="#cell" x="911" y="558"/>
+  </g>
+</svg>
