@@ -55,6 +55,31 @@ a:hover {
 .site-header {
   padding: var(--space-md) var(--space-sm);
   border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+.home.js-reveal-header .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  transform: translate3d(0, -100%, 0);
+  pointer-events: none;
+  will-change: transform;
+  backface-visibility: hidden;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home.js-reveal-header .site-header.is-visible {
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home.js-reveal-header .site-header {
+    transition: none;
+  }
 }
 
 .site-header__inner,
@@ -88,11 +113,24 @@ main {
   margin-bottom: var(--space-xl);
 }
 
-.hero__icon {
-  width: 96px;
-  height: 96px;
+.hero__logo {
+  width: min(280px, 80%);
+  height: auto;
+  max-width: none;
   margin-inline: auto;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .page-title {
@@ -103,15 +141,7 @@ main {
   line-height: 1.2;
 }
 
-.hero__title {
-  margin: 0 0 var(--space-xs);
-  font-size: clamp(1.75rem, 5vw, 2.25rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.prose .section__title {
+.page-title {
   margin-top: var(--space-lg);
 }
 
