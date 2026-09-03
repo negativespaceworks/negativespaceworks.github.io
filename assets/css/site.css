@@ -208,6 +208,21 @@ main {
   background: var(--color-bg);
 }
 
+a.product-card {
+  text-decoration: none;
+}
+
+a.product-card:hover {
+  border-color: var(--color-text);
+  text-decoration: none;
+}
+
+a.product-card .product-card__status {
+  font-style: normal;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 img.product-card__icon {
   width: 96px;
   height: 96px;
