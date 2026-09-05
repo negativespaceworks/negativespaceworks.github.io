@@ -78,6 +78,38 @@ main,
   min-height: 3.5rem;
 }
 
+.site-header__tools {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.lang-switch a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lang-switch [aria-current="page"] {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .site-header__brand {
   display: inline-flex;
   align-items: center;
@@ -141,6 +173,11 @@ main {
 
 .hero.is-live:not(.is-fading) .hero__video {
   opacity: 1;
+}
+
+.hero.is-instant .hero__media img,
+.hero.is-instant .hero__video {
+  transition: none;
 }
 
 .hero.is-fading img,
@@ -228,6 +265,66 @@ main {
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+.section__subtitle {
+  margin: var(--space-lg) 0 var(--space-sm);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.section__body + .section__body {
+  margin-top: var(--space-sm);
+}
+
+.options-layout {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.options-shot {
+  margin: 0;
+}
+
+.options-shot img {
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  border: 1px solid var(--color-border);
+  background: var(--color-panel);
+}
+
+.options-copy .section__body {
+  margin-bottom: 0;
+}
+
+.option-list,
+.releases ul {
+  margin: 0 0 var(--space-sm);
+  padding-left: 1.25rem;
+  color: var(--color-muted);
+}
+
+.option-list li + li,
+.releases li + li {
+  margin-top: 0.35rem;
+}
+
+.release + .release {
+  margin-top: var(--space-md);
+}
+
+.release__title {
+  margin: 0 0 var(--space-xs);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.release__date {
+  margin-left: 0.4rem;
+  font-weight: 400;
+  color: var(--color-faint);
 }
 
 .section__lede,
@@ -400,6 +497,12 @@ code {
 
   .profiles {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .options-layout {
+    grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-lg);
   }
 }
 

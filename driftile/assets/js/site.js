@@ -75,7 +75,18 @@
   const hero = document.querySelector(".hero");
   const heroVideo = document.querySelector(".hero__video");
   if (hero && heroVideo) {
-    const markLive = () => hero.classList.add("is-live");
+    let shown = false;
+    const markLive = () => {
+      if (shown) {
+        return;
+      }
+      shown = true;
+      hero.classList.add("is-live", "is-instant");
+      void hero.offsetWidth;
+      window.requestAnimationFrame(() => {
+        hero.classList.remove("is-instant");
+      });
+    };
     bindLoopFade(hero, heroVideo);
     heroVideo.addEventListener("playing", markLive);
     const playHero = heroVideo.play();

@@ -91,6 +91,45 @@ main,
   padding-inline: var(--space-sm);
 }
 
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.lang-switch a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lang-switch [aria-current="page"] {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.lang-switch--fixed {
+  position: fixed;
+  top: var(--space-md);
+  right: var(--space-sm);
+  z-index: 30;
+}
+
 .site-header__logo {
   height: 36px;
   width: auto;

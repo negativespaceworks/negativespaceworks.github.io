@@ -4,7 +4,7 @@ Product page for the Driftile macOS screen saver. Freeware.
 
 Public URL: `https://negativespace.works/driftile/`
 
-Current build: **2.0.1** (`downloads/Driftile-v2.0.1.zip`).
+Current build: **2.0.2** (`downloads/Driftile-v2.0.2.zip`).
 
 ## Local preview
 
