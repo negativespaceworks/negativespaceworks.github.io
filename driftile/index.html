@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-locale="en" data-version="2.0.2" data-download="/driftile/downloads/Driftile-v2.0.2.zip">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Driftile — macOS screen saver</title>
+  <meta name="description" content="Driftile is a free macOS screen saver of color fields that drift. Current version: 2.0.2.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Driftile">
+  <meta property="og:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.2.">
+  <meta property="og:image" content="https://negativespace.works/driftile/assets/img/Driftile-Icon.png">
+  <meta property="og:url" content="https://negativespace.works/driftile/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Driftile">
+  <meta name="twitter:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.2.">
+  <meta name="twitter:image" content="https://negativespace.works/driftile/assets/img/Driftile-Icon.png">
+  <link rel="alternate" hreflang="en" href="https://negativespace.works/driftile/">
+  <link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/driftile/">
+  <link rel="alternate" hreflang="x-default" href="https://negativespace.works/driftile/">
+  <link rel="icon" href="/driftile/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/driftile/assets/img/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/driftile/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/driftile/assets/css/site.css">
+  <script src="/assets/js/lang.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#top">
+        <img src="/driftile/assets/img/Driftile-Icon.png" width="40" height="40" alt="">
+        <span>Driftile</span>
+      </a>
+      <nav class="lang-switch" aria-label="Language">
+        <span lang="en" aria-current="page">En</span>
+        <span aria-hidden="true">|</span>
+        <a href="/ja/driftile/" lang="ja" hreflang="ja" data-set-locale="ja">Ja</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="/driftile/assets/hero/catch.png" alt="" width="1280" height="720">
+        <video
+          class="hero__video"
+          muted
+          autoplay
+          playsinline
+          preload="auto"
+          poster="/driftile/assets/hero/catch.png"
+          src="/driftile/assets/hero/catch.mp4">
+        </video>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__kicker">macOS screen saver · freeware</p>
+        <h1 id="hero-title">Driftile</h1>
+        <p class="hero__lede">A macOS screen saver of color fields that drift. Inspired by AbstractMotion and Mondrian’s color divisions.</p>
+        <p class="hero__meta">
+          <span>macOS 12+</span>
+          <span>Free</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="background-heading">
+      <h2 class="section__title" id="background-heading">Background</h2>
+      <p class="section__body">There was a Mondrian-like screen saver from the first years of OS X: <em>AbstractMotion</em> (2001), by Dan Abrahams-Gessel. It was PowerPC only. It does not run on Apple Silicon.</p>
+      <p class="section__body">Driftile started from that memory. Color fields that drift, rebuilt as a native macOS .saver. The palettes also look at Mondrian, Hokusai, Hopper, and others. They are interpretations, not copies, and this project is not affiliated with those estates.</p>
+    </section>
+
+    <section class="section" aria-labelledby="profiles-heading">
+      <h2 class="section__title" id="profiles-heading">Profiles</h2>
+      <p class="section__lede">Six built-in Profiles. On a computer, hover a thumbnail to play. On a phone, the card in view plays. Tap to pause or switch.</p>
+
+      <div class="profiles">
+        <article class="profile-card" data-profile="abstractMotion" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/abstractMotion.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/abstractMotion.png" data-src="/driftile/assets/profiles/abstractMotion.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Abstract Motion</h3>
+          <p class="profile-card__desc">Diagonal lines and twelve muted colors. Hue drifts slowly. The factory default.</p>
+        </article>
+
+        <article class="profile-card" data-profile="classicComposition" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/classicComposition.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/classicComposition.png" data-src="/driftile/assets/profiles/classicComposition.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Classic Composition</h3>
+          <p class="profile-card__desc">Primary colors and gray on a thick grid that rearranges slowly.</p>
+        </article>
+
+        <article class="profile-card" data-profile="minimalDrift" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/minimalDrift.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/minimalDrift.png" data-src="/driftile/assets/profiles/minimalDrift.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Minimal Drift</h3>
+          <p class="profile-card__desc">Monochrome, wide gaps, very slow movement.</p>
+        </article>
+
+        <article class="profile-card" data-profile="greatWave" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/greatWave.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/greatWave.png" data-src="/driftile/assets/profiles/greatWave.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Great Wave</h3>
+          <p class="profile-card__desc">Hokusai’s Prussian blue. Short fades, like spray.</p>
+        </article>
+
+        <article class="profile-card" data-profile="nighthawks" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/nighthawks.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/nighthawks.png" data-src="/driftile/assets/profiles/nighthawks.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Nighthawks</h3>
+          <p class="profile-card__desc">Hopper’s late-night counter. Orthogonal windows, moving slowly.</p>
+        </article>
+
+        <article class="profile-card" data-profile="colorField" tabindex="0">
+          <div class="profile-card__media">
+            <img src="/driftile/assets/profiles/colorField.png" alt="" width="1280" height="720">
+            <video muted playsinline preload="none" poster="/driftile/assets/profiles/colorField.png" data-src="/driftile/assets/profiles/colorField.mp4"></video>
+            <span class="profile-card__hint" aria-hidden="true">Play</span>
+          </div>
+          <h3 class="profile-card__name">Color Field</h3>
+          <p class="profile-card__desc">No lines. Rothko oranges and yellows that breathe.</p>
+        </article>
+      </div>
+      <p class="section__note">These are browser captures. Composition will differ from the installed screen saver.</p>
+    </section>
+
+    <section class="section" aria-labelledby="options-heading">
+      <h2 class="section__title" id="options-heading">Options</h2>
+      <p class="section__lede">The six Profiles are starting points. In Options you can also set the motion in detail.</p>
+      <div class="options-layout">
+        <figure class="options-shot">
+          <img src="/driftile/assets/options/options-en.png" width="746" height="1078" alt="The Driftile Options window. Profile is Abstract Motion.">
+        </figure>
+        <div class="options-copy">
+          <ul class="option-list">
+            <li><strong>Palette</strong> — eight palettes, including Classic, Great Wave, and Monochrome</li>
+            <li><strong>Direction</strong> — Free (diagonal lines) or Composition (Mondrian-like splits)</li>
+            <li><strong>Adjacency</strong> — whether neighboring cells may share a color</li>
+            <li><strong>Lines</strong>, <strong>color chance</strong>, <strong>fade-in</strong>, and <strong>speed</strong></li>
+            <li><strong>Hue drift</strong> and <strong>line width</strong> (zero hides the lines)</li>
+          </ul>
+          <p class="section__body">Custom keeps one slot of your own settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download" aria-labelledby="download-heading">
+      <h2 class="section__title" id="download-heading">Download</h2>
+      <p class="section__lede">Free. Current release is <strong>2.0.2</strong> (2026-09-05).</p>
+      <p>
+        <a class="button" href="/driftile/downloads/Driftile-v2.0.2.zip">
+          Download Driftile
+        </a>
+      </p>
+      <p class="file-meta">File <code>Driftile-v2.0.2.zip</code> · about 470 KB · Apple Silicon / Intel · macOS 12 or later</p>
+
+      <h3 class="section__subtitle">Recent versions</h3>
+      <div class="releases">
+        <article class="release">
+          <h4 class="release__title">2.0.2 <span class="release__date">5 September 2026</span></h4>
+          <ul>
+            <li>The Options sheet follows the Mac language: Japanese labels when Japanese is first</li>
+            <li>Palette names and the Direction / Adjacency values stay in English</li>
+          </ul>
+        </article>
+        <article class="release">
+          <h4 class="release__title">2.0.1 <span class="release__date">30 August 2026</span></h4>
+          <ul>
+            <li>Fixes a freeze on multiple displays under Tahoe</li>
+            <li>Windowless preview engines no longer stop the live screens</li>
+            <li>After replacing the .saver, quit the old Screen Saver process so the new binary loads</li>
+          </ul>
+        </article>
+        <article class="release">
+          <h4 class="release__title">2.0.0 <span class="release__date">30 August 2026</span></h4>
+          <ul>
+            <li>Palettes and Profiles built around famous artworks</li>
+            <li>Six built-in Profiles plus Custom; factory default is Abstract Motion</li>
+            <li>Eight palettes, including Classic, Great Wave, Nighthawks, and Monochrome</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="install-heading">
+      <h2 class="section__title" id="install-heading">Install</h2>
+      <p class="section__lede">This build is not notarized. <strong>Do not double-click the .saver.</strong> Gatekeeper may move it to the Trash with no prompt.</p>
+      <ol class="steps">
+        <li>Unzip the download.</li>
+        <li>In Terminal, clear quarantine and copy it into the Screen Savers folder (adjust the path if you unzipped elsewhere).</li>
+      </ol>
+      <pre class="code-block"><code>xattr -cr ~/Downloads/Driftile.saver
+mkdir -p ~/Library/Screen\ Savers
+rm -rf ~/Library/Screen\ Savers/Driftile.saver
+cp -R ~/Downloads/Driftile.saver ~/Library/Screen\ Savers/</code></pre>
+      <ol class="steps" start="3">
+        <li>System Settings → Wallpaper → Screen Saver, then choose Driftile. If it does not appear, quit System Settings completely with ⌘Q and open it again.</li>
+      </ol>
+      <p class="section__note">Check the version in the Options sheet title, or with <code>plutil -p ~/Library/Screen\ Savers/Driftile.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</p>
+    </section>
+
+    <section class="section" aria-labelledby="credits-heading">
+      <h2 class="section__title" id="credits-heading">Credits</h2>
+      <p class="section__body">Inspired by <em>AbstractMotion</em> (Dan Abrahams-Gessel / syntheticblue, 2001) and Piet Mondrian’s <em>Composition</em> series. Palettes also draw from Hokusai, Klimt, Hopper, Hockney, and Rothko. Not affiliated with any estate, museum, or trademark holder.</p>
+      <p class="section__body">A personal project from Negative Space Works.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">© 2026 <a href="/">Negative Space Works</a></p>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/driftile/assets/js/site.js"></script>
+</body>
+</html>

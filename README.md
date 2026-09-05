@@ -11,3 +11,5 @@ python3 -m http.server
 ```
 
 Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+Driftile: [http://localhost:8000/driftile/](http://localhost:8000/driftile/).
