@@ -2,6 +2,8 @@
 
 Organization site for Negative Space Works.
 
+Public copy is **English first**; Japanese under `/ja/` is a translation of that English (not a domestic rewrite). See the brand repo: `docs/copy-and-i18n.md`.
+
 ## Local preview
 
 From the repository root:

@@ -1,0 +1,29 @@
+---
+description: Public copy is English-first; Japanese is a translation, not localized rewrite
+alwaysApply: true
+---
+
+# English-first copy (Negative Space Works)
+
+Public copy (site, product pages, release notes, marketing) is written in **English first**. Japanese is a **translation of that English**, not copy invented in Japanese.
+
+## Rules
+
+1. Draft and revise English before Japanese.
+2. Do not rewrite Japanese for "natural" domestic tone. Keep English syntax, rhythm, and voice so it still feels translated.
+3. Preserve sentence boundaries: if English has two sentences, Japanese has two.
+4. Do not translate product names, commands, file names, or UI identifiers (e.g. Driftile, Download, Profile).
+5. When revising, change English first, then update Japanese to match.
+
+## Examples
+
+```text
+❌ BAD — Japanese-first / localized rewrite
+英語が2文でも、日本語は読みやすく1文にまとめる。
+
+✅ GOOD — parallel translation
+PowerPC only. It does not run on Apple Silicon.
+PowerPC 専用でした。Apple Silicon では動きません。
+```
+
+Canonical write-up lives in the private brand repo: `brand/docs/copy-and-i18n.md`
