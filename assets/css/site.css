@@ -89,13 +89,49 @@ main,
 }
 
 .site-masthead__inner {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
 }
 
 .site-masthead__logo {
   height: 22px;
   width: auto;
   max-width: none;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.lang-switch a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.lang-switch [aria-current="page"] {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.lang-switch--hero {
+  margin-top: var(--space-md);
+}
+
+html[lang="ja"] body {
+  font-family: "IBM Plex Sans", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 main {
@@ -143,10 +179,10 @@ main {
 
 .page-title {
   margin: var(--space-md) 0 var(--space-lg);
-  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 1;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .prose p,
@@ -179,10 +215,10 @@ main {
 
 .section__title {
   margin: 0 0 var(--space-md);
-  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.65rem);
   font-weight: 600;
   letter-spacing: -0.025em;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--color-ink);
 }
 

@@ -1,0 +1,27 @@
+---
+description: Japanese register — site = translated feel with 体言止め; apps = ですます
+alwaysApply: true
+---
+
+# Japanese tone (Negative Space Works)
+
+Layered on English-first. Canonical: `brand/docs/copy-and-i18n.md`
+
+## Rules
+
+1. **Website / marketing Japanese:** keep a **translated feel**. Prefer **体言止め** and plain parallel endings that mirror English sentence cuts. Do **not** polish into domestic ですます, and do **not** force textbook **だ／である** closings.
+2. **In-app Japanese** (UI, dialogs, settings, onboarding): **ですます調**.
+3. English first, then Japanese. Tone does not license Japanese-first rewrite.
+
+## Examples
+
+```text
+Site (対訳感・体言止め)
+Negative Space Works は、パソコンに向かう時間のための小さな作品をつくる個人スタジオ。
+製品ページは準備中。
+…にする Mac アプリ。
+
+App UI (ですます)
+製品ページは準備中です。
+このアドレスにメールしてください。
+```
