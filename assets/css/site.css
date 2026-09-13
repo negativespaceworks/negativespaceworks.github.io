@@ -232,6 +232,15 @@ main {
   color: var(--color-muted);
 }
 
+.section__more {
+  margin: var(--space-sm) 0 0;
+}
+
+.section__more a {
+  color: var(--color-muted);
+  text-underline-offset: 0.15em;
+}
+
 .products {
   display: grid;
   gap: var(--space-md);
@@ -309,6 +318,12 @@ img.product-card__icon {
   margin: 0;
   font-size: 0.875rem;
   color: var(--color-muted);
+}
+
+.site-footer__copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .site-footer__nav {
