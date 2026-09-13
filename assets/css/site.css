@@ -143,10 +143,10 @@ main {
 
 .page-title {
   margin: var(--space-md) 0 var(--space-lg);
-  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-size: clamp(2rem, 6vw, 3.25rem);
   font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 0.95;
+  letter-spacing: -0.035em;
+  line-height: 1;
 }
 
 .prose p,
@@ -179,17 +179,26 @@ main {
 
 .section__title {
   margin: 0 0 var(--space-md);
-  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
   font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-muted);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--color-ink);
 }
 
 .section__body {
   margin: 0;
   color: var(--color-muted);
   font-size: 1.05rem;
+}
+
+.section__more {
+  margin: var(--space-sm) 0 0;
+}
+
+.section__more a {
+  color: var(--color-muted);
+  text-underline-offset: 0.15em;
 }
 
 .products {
@@ -255,11 +264,18 @@ img.product-row__icon {
   color: var(--color-muted);
 }
 
+.site-footer__copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .site-footer__nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0;
+  column-gap: 1.1rem;
+  row-gap: 0.5rem;
   font-size: 0.875rem;
 }
 
@@ -269,17 +285,15 @@ img.product-row__icon {
   border-bottom: 1px solid currentColor;
 }
 
-.site-footer__nav a:hover {
-  text-decoration: none;
-}
-
-.site-footer__sep {
-  color: var(--color-muted);
+.site-footer__nav a:hover,
+.site-footer__nav a:focus-visible {
+  border-bottom-width: 2px;
+  outline: none;
 }
 
 @media (min-width: 900px) {
   :root {
-    --col: min(28rem, 38vw);
+    --col: min(28rem, calc(100% - var(--rail) - 1.25rem));
   }
 
   .product-row {
