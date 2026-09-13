@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-locale="en" data-version="2.0.3" data-download="/driftile/downloads/Driftile-v2.0.3.zip">
+<html lang="en" data-locale="en" data-version="2.0.4" data-download="/driftile/downloads/Driftile-v2.0.4.zip">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Driftile — macOS screen saver</title>
-  <meta name="description" content="Driftile is a free macOS screen saver of color fields that drift. Current version: 2.0.3.">
+  <meta name="description" content="Driftile is a free macOS screen saver of color fields that drift. Current version: 2.0.4.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Driftile">
-  <meta property="og:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.3.">
+  <meta property="og:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.4.">
   <meta property="og:image" content="https://negativespace.works/driftile/assets/img/Driftile-Icon.png">
   <meta property="og:url" content="https://negativespace.works/driftile/">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ja_JP">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Driftile">
-  <meta name="twitter:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.3.">
+  <meta name="twitter:description" content="A free macOS screen saver. Color fields that drift. Version 2.0.4.">
   <meta name="twitter:image" content="https://negativespace.works/driftile/assets/img/Driftile-Icon.png">
   <link rel="alternate" hreflang="en" href="https://negativespace.works/driftile/">
   <link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/driftile/">
@@ -144,7 +144,7 @@
       <p class="section__lede">The six Profiles are starting points. In Options you can also set the motion in detail.</p>
       <div class="options-layout">
         <figure class="options-shot">
-          <img src="/driftile/assets/options/options-en.png" width="746" height="1078" alt="The Driftile Options window. Profile is Abstract Motion.">
+          <img src="/driftile/assets/options/options-en.png" width="746" height="1538" alt="The Driftile Options window. Profile is Abstract Motion. About is at the bottom.">
         </figure>
         <div class="options-copy">
           <ul class="option-list">
@@ -155,6 +155,7 @@
             <li><strong>Hue drift</strong> and <strong>line width</strong> (zero hides the lines)</li>
           </ul>
           <p class="section__body">Custom keeps one slot of your own settings.</p>
+          <p class="section__body">A compact About at the bottom shows the product name, version, and website.</p>
         </div>
       </div>
     </section>
@@ -162,16 +163,22 @@
     <section class="section" id="download" aria-labelledby="download-heading">
       <h2 class="section__title" id="download-heading">Download</h2>
       <p class="section__note">After you click Done in Screen Saver settings, Options may not open again until you quit and reopen System Settings.</p>
-      <p class="section__lede">Free. Current release is <strong>2.0.3</strong> (2026-09-07).</p>
+      <p class="section__lede">Free. Current release is <strong>2.0.4</strong> (2026-09-13).</p>
       <p>
-        <a class="button" href="/driftile/downloads/Driftile-v2.0.3.zip">
+        <a class="button" href="/driftile/downloads/Driftile-v2.0.4.zip">
           Download Driftile
         </a>
       </p>
-      <p class="file-meta">File <code>Driftile-v2.0.3.zip</code> · about 480 KB · Apple Silicon / Intel · macOS 12 or later</p>
+      <p class="file-meta">File <code>Driftile-v2.0.4.zip</code> · about 490 KB · Apple Silicon / Intel · macOS 12 or later</p>
 
       <h3 class="section__subtitle">Recent versions</h3>
       <div class="releases">
+        <article class="release">
+          <h4 class="release__title">2.0.4 <span class="release__date">13 September 2026</span></h4>
+          <ul>
+            <li>Options include a compact About with the product name, version, and website</li>
+          </ul>
+        </article>
         <article class="release">
           <h4 class="release__title">2.0.3 <span class="release__date">7 September 2026</span></h4>
           <ul>
@@ -220,7 +227,7 @@ cp -R ~/Downloads/Driftile.saver ~/Library/Screen\ Savers/</code></pre>
       <ol class="steps" start="3">
         <li>System Settings → Wallpaper → Screen Saver, then choose Driftile. If it does not appear, quit System Settings completely with ⌘Q and open it again.</li>
       </ol>
-      <p class="section__note">Check the version in the Options sheet title, or with <code>plutil -p ~/Library/Screen\ Savers/Driftile.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</p>
+      <p class="section__note">Check the version in About in Options, or with <code>plutil -p ~/Library/Screen\ Savers/Driftile.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</p>
     </section>
 
     <section class="section" aria-labelledby="credits-heading">
