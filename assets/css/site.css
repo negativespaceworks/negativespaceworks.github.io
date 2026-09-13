@@ -281,6 +281,27 @@ img.product-row__icon {
   font-style: normal;
 }
 
+a.product-row {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.product-row:hover .product-row__name,
+a.product-row:focus-visible .product-row__name {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+a.product-row:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 4px;
+}
+
+a.product-row .product-row__status {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .site-footer {
   padding: var(--space-xl) 0 var(--space-lg);
 }
