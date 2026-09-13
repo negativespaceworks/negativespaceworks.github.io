@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <!-- Reliefo app icon for the studio site. -->
+  <defs>
+    <filter id="iconShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1a3331" flood-opacity="0.30"/>
+    </filter>
+    <!-- Soft inward ripples: four rings, equal spacing; outermost fixed. -->
+    <radialGradient id="ring0" cx="627" cy="627" r="552.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0.852" stop-color="#2a5856" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2a5856" stop-opacity="0.42"/>
+    </radialGradient>
+    <radialGradient id="ring1" cx="627" cy="627" r="552.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0.628" stop-color="#2a5856" stop-opacity="0"/>
+      <stop offset="0.775" stop-color="#2a5856" stop-opacity="0.42"/>
+      <stop offset="0.797" stop-color="#2a5856" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ring2" cx="627" cy="627" r="552.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0.403" stop-color="#2a5856" stop-opacity="0"/>
+      <stop offset="0.551" stop-color="#2a5856" stop-opacity="0.42"/>
+      <stop offset="0.573" stop-color="#2a5856" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ring3" cx="627" cy="627" r="552.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0.178" stop-color="#2a5856" stop-opacity="0"/>
+      <stop offset="0.326" stop-color="#2a5856" stop-opacity="0.42"/>
+      <stop offset="0.348" stop-color="#2a5856" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="field" cx="627" cy="627" r="615" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c948e"/>
+      <stop offset="1" stop-color="#48807c"/>
+    </radialGradient>
+    <clipPath id="squircle">
+      <rect x="12" y="12" width="1230" height="1230" rx="274" ry="274"/>
+    </clipPath>
+  </defs>
+
+  <rect x="12" y="12" width="1230" height="1230" rx="274" fill="#48807c" filter="url(#iconShadow)"/>
+
+  <g clip-path="url(#squircle)">
+    <rect x="12" y="12" width="1230" height="1230" fill="url(#field)"/>
+    <rect x="12" y="12" width="1230" height="1230" fill="url(#ring0)"/>
+    <rect x="12" y="12" width="1230" height="1230" fill="url(#ring1)"/>
+    <rect x="12" y="12" width="1230" height="1230" fill="url(#ring2)"/>
+    <rect x="12" y="12" width="1230" height="1230" fill="url(#ring3)"/>
+
+    <!-- Meeting window, centered -->
+    <rect x="338.6" y="440.8" width="576.6" height="372.4" rx="52.8" fill="#0c0a09"/>
+    <rect x="338.6" y="440.8" width="576.6" height="372.4" rx="52.8" fill="none" stroke="#6ea8a0" stroke-width="7.2"/>
+
+    <!-- Window controls -->
+    <circle cx="401.0" cy="498.4" r="14.4" fill="#6ea8a0"/>
+    <circle cx="446.7" cy="498.4" r="14.4" fill="#6ea8a0"/>
+    <circle cx="492.3" cy="498.4" r="14.4" fill="#6ea8a0"/>
+  </g>
+</svg>
