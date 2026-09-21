@@ -18,13 +18,16 @@
   --color-bg: #d8dbdf;
   --color-ink: #111111;
   --color-muted: #3a3a3a;
-  --rail: clamp(1.25rem, 8vw, 5.5rem);
-  --col: min(26rem, calc(100% - var(--rail) - 1.25rem));
+  /* Left rail + content band; right void stays intentional but controlled */
+  --rail: clamp(1.25rem, 6vw, 3.5rem);
+  --void-right: clamp(1.25rem, 5vw, 2.5rem);
+  --col: calc(100% - var(--rail) - var(--void-right));
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2.75rem;
   --space-xl: 5rem;
+  --measure: 40em;
 }
 
 *,
@@ -149,7 +152,7 @@ main {
 }
 
 .hero__logo {
-  width: min(22rem, 100%);
+  width: min(24rem, 100%);
   height: auto;
   max-width: none;
   margin: 0 0 var(--space-md);
@@ -162,7 +165,7 @@ main {
   line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--color-ink);
-  max-width: 18em;
+  max-width: 28em;
 }
 
 .visually-hidden {
@@ -189,6 +192,10 @@ main {
 .prose ul {
   margin: 0 0 var(--space-sm);
   color: var(--color-muted);
+}
+
+.prose {
+  max-width: var(--measure);
 }
 
 .prose p:last-child,
@@ -226,6 +233,7 @@ main {
   margin: 0;
   color: var(--color-muted);
   font-size: 1.05rem;
+  max-width: var(--measure);
 }
 
 .section__more {
@@ -329,12 +337,45 @@ img.product-row__icon {
 
 @media (min-width: 900px) {
   :root {
-    --col: min(28rem, calc(100% - var(--rail) - 1.25rem));
+    --rail: clamp(2rem, 7vw, 5.5rem);
+    --void-right: clamp(2.5rem, 12vw, 8rem);
+    --measure: 46em;
+  }
+
+  .hero__logo {
+    width: min(28rem, 100%);
   }
 
   .product-row {
     grid-template-columns: 72px 1fr;
     gap: var(--space-md);
     align-items: start;
+  }
+}
+
+/* Wide desktop: content band grows with the viewport; products claim the right half */
+@media (min-width: 1100px) {
+  :root {
+    --rail: clamp(2.5rem, 8vw, 6.5rem);
+    --void-right: clamp(3rem, 14vw, 11rem);
+    --measure: 50em;
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr;
+    column-gap: clamp(2rem, 4vw, 3.5rem);
+    row-gap: var(--space-lg);
+  }
+
+  .product-row {
+    grid-template-columns: 72px 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --rail: clamp(3rem, 8vw, 7rem);
+    --void-right: clamp(4rem, 12vw, 14rem);
+    --measure: 52em;
   }
 }
