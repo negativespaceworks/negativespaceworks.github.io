@@ -1,0 +1,34 @@
+---
+description: When public site URLs change, update sitemap.xml in the same change
+alwaysApply: true
+---
+
+# Update sitemap on public page changes (Negative Space Works)
+
+When public site URLs change on this GitHub Pages site, update `sitemap.xml` in the **same change** (or same PR). Do not leave sitemap updates for a follow-up.
+
+## Must update
+
+Update `sitemap.xml` when you:
+
+1. Add a public page
+2. Remove a public page
+3. Rename a page or change its path
+4. Add a locale alternate that needs `hreflang` in the sitemap
+
+## Usually skip
+
+Skip a required sitemap edit when the change is **copy- or design-only** on an existing URL. An optional `lastmod` bump is fine; it is not required.
+
+## Origin and robots
+
+- Use the real origin `https://negativespace.works` (check `CNAME`; do not invent hosts).
+- Keep `robots.txt`’s `Sitemap:` pointer correct if the sitemap path ever moves.
+
+## Structure
+
+Preserve the existing sitemap structure: URL list plus `xhtml:link` hreflang alternates (`en`, `ja`, `x-default`) as already present. Match the pattern of neighboring `<url>` entries when adding or editing entries.
+
+## Related
+
+For new page meta/copy, follow `.cursor/rules/english-first-copy.mdc` (English first; Japanese is a translation).
