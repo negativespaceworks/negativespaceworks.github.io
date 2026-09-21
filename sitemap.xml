@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://negativespace.works/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/about/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/about/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/ja/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/about/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/about/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/support/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/ja/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/support/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/privacy/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/ja/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/privacy/"/>
+  </url>
+</urlset>
