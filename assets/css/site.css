@@ -18,14 +18,16 @@
   --color-bg: #d8dbdf;
   --color-ink: #111111;
   --color-muted: #3a3a3a;
-  /* Left rail + content band; room remains open on the far right */
-  --rail: clamp(1.25rem, 6vw, 4rem);
-  --col: min(34rem, calc(100% - var(--rail) - 1.5rem));
+  /* Left rail + content band; right void stays intentional but controlled */
+  --rail: clamp(1.25rem, 6vw, 3.5rem);
+  --void-right: clamp(1.25rem, 5vw, 2.5rem);
+  --col: calc(100% - var(--rail) - var(--void-right));
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2.75rem;
   --space-xl: 5rem;
+  --measure: 40em;
 }
 
 *,
@@ -193,7 +195,7 @@ main {
 }
 
 .prose {
-  max-width: 40em;
+  max-width: var(--measure);
 }
 
 .prose p:last-child,
@@ -231,7 +233,7 @@ main {
   margin: 0;
   color: var(--color-muted);
   font-size: 1.05rem;
-  max-width: 40em;
+  max-width: var(--measure);
 }
 
 .section__more {
@@ -335,8 +337,9 @@ img.product-row__icon {
 
 @media (min-width: 900px) {
   :root {
-    --rail: clamp(2rem, 8vw, 6rem);
-    --col: min(44rem, calc(100% - var(--rail) - 3rem));
+    --rail: clamp(2rem, 7vw, 5.5rem);
+    --void-right: clamp(2.5rem, 12vw, 8rem);
+    --measure: 46em;
   }
 
   .hero__logo {
@@ -350,11 +353,12 @@ img.product-row__icon {
   }
 }
 
-/* Wide desktop: claim more horizontal field; keep an open right margin */
+/* Wide desktop: content band grows with the viewport; products claim the right half */
 @media (min-width: 1100px) {
   :root {
-    --rail: clamp(2.5rem, 9vw, 7.5rem);
-    --col: min(56rem, calc(100% - var(--rail) - 4rem));
+    --rail: clamp(2.5rem, 8vw, 6.5rem);
+    --void-right: clamp(3rem, 14vw, 11rem);
+    --measure: 50em;
   }
 
   .products {
@@ -370,6 +374,8 @@ img.product-row__icon {
 
 @media (min-width: 1400px) {
   :root {
-    --col: min(62rem, calc(100% - var(--rail) - 5rem));
+    --rail: clamp(3rem, 8vw, 7rem);
+    --void-right: clamp(4rem, 12vw, 14rem);
+    --measure: 52em;
   }
 }
