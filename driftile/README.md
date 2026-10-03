@@ -11,7 +11,7 @@ Download URL on the product pages: `/driftile/downloads/Driftile-v2.0.4.zip`
 
 The zip is hosted in this site repo. The Driftile GitHub repo is private, so do not use a GitHub Releases download URL on the public site.
 
-This build is signed. The Install section keeps the Terminal / `xattr` path. Do not claim notarization unless a notarized build is shipped.
+This build is signed and notarized. The Install section describes the normal double-click install path.
 
 Chrome and type follow the studio site (`/assets/css/site.css`). Product-only layout lives in `assets/css/product.css`.
 
