@@ -216,16 +216,10 @@
 
     <section class="section" aria-labelledby="install-heading">
       <h2 class="section__title" id="install-heading">Install</h2>
-      <p class="section__lede">This build is signed. <strong>Do not double-click the .saver.</strong> Gatekeeper may move it to the Trash with no prompt.</p>
+      <p class="section__lede">This build is signed and notarized.</p>
       <ol class="steps">
         <li>Unzip the download.</li>
-        <li>In Terminal, clear quarantine and copy it into the Screen Savers folder (adjust the path if you unzipped elsewhere).</li>
-      </ol>
-      <pre class="code-block"><code>xattr -cr ~/Downloads/Driftile.saver
-mkdir -p ~/Library/Screen\ Savers
-rm -rf ~/Library/Screen\ Savers/Driftile.saver
-cp -R ~/Downloads/Driftile.saver ~/Library/Screen\ Savers/</code></pre>
-      <ol class="steps" start="3">
+        <li>Double-click <code>Driftile.saver</code> (or open it) to install.</li>
         <li>System Settings → Wallpaper → Screen Saver, then choose Driftile. If it does not appear, quit System Settings completely with ⌘Q and open it again.</li>
       </ol>
       <p class="section__note">Check the version in About in Options, or with <code>plutil -p ~/Library/Screen\ Savers/Driftile.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</p>

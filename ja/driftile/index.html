@@ -216,16 +216,10 @@
 
     <section class="section" aria-labelledby="install-heading">
       <h2 class="section__title" id="install-heading">インストール</h2>
-      <p class="section__lede">このビルドは署名済みです。<strong>.saver をダブルクリックしないでください。</strong> Gatekeeper が、確認なしでゴミ箱へ移すことがあります。</p>
+      <p class="section__lede">このビルドは署名済みで、公証済みです。</p>
       <ol class="steps">
         <li>ダウンロードした zip を展開します。</li>
-        <li>ターミナルで検疫を外し、Screen Savers フォルダへコピーします（展開した場所が違う場合はパスを合わせてください）。</li>
-      </ol>
-      <pre class="code-block"><code>xattr -cr ~/Downloads/Driftile.saver
-mkdir -p ~/Library/Screen\ Savers
-rm -rf ~/Library/Screen\ Savers/Driftile.saver
-cp -R ~/Downloads/Driftile.saver ~/Library/Screen\ Savers/</code></pre>
-      <ol class="steps" start="3">
+        <li><code>Driftile.saver</code> をダブルクリックして（または開いて）インストールします。</li>
         <li>システム設定 → 壁紙 → スクリーンセーバ で Driftile を選びます。出ないときは、システム設定を ⌘Q で完全に終了してから開き直してください。</li>
       </ol>
       <p class="section__note">バージョンはオプションの About、または <code>plutil -p ~/Library/Screen\ Savers/Driftile.saver/Contents/Info.plist</code> の <code>CFBundleShortVersionString</code> で確認できます。</p>
