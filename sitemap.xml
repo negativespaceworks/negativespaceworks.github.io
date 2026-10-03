@@ -26,6 +26,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/about/"/>
   </url>
   <url>
+    <loc>https://negativespace.works/driftile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/driftile/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/driftile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/driftile/"/>
+  </url>
+  <url>
+    <loc>https://negativespace.works/ja/driftile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/driftile/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/driftile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://negativespace.works/driftile/"/>
+  </url>
+  <url>
     <loc>https://negativespace.works/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://negativespace.works/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/support/"/>
