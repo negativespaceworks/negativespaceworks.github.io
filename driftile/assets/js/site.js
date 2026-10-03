@@ -7,11 +7,11 @@
     node.textContent = version;
   });
 
-  document.querySelectorAll('a[href*="/downloads/"]').forEach((link) => {
-    if (download) {
+  if (download) {
+    document.querySelectorAll("#download a.button").forEach((link) => {
       link.setAttribute("href", download);
-    }
-  });
+    });
+  }
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduceMotion) {
