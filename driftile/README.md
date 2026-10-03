@@ -4,13 +4,14 @@ Product page for the Driftile macOS screen saver. Freeware.
 
 Public URL: `https://negativespace.works/driftile/`
 
-Current build: **2.0.4**.
+Current build: **2.0.4** (`downloads/Driftile-v2.0.4.zip`).
 
-Download URL on the product pages:
+Download URL on the product pages: `/driftile/downloads/Driftile-v2.0.4.zip`
+(after publish: `https://negativespace.works/driftile/downloads/Driftile-v2.0.4.zip`).
 
-`https://github.com/negativespaceworks/driftile/releases/download/v2.0.4/Driftile-v2.0.4.zip`
+The zip is hosted in this site repo. The Driftile GitHub repo is private, so do not use a GitHub Releases download URL on the public site.
 
-Do not host the zip in this site repo. The GitHub Release is the download target.
+This build is signed. The Install section keeps the Terminal / `xattr` path. Do not claim notarization unless a notarized build is shipped.
 
 Chrome and type follow the studio site (`/assets/css/site.css`). Product-only layout lives in `assets/css/product.css`.
 
@@ -26,7 +27,7 @@ Open [http://localhost:8000/driftile/](http://localhost:8000/driftile/).
 
 ## Bumping the version
 
-1. Publish the new `Driftile-vX.Y.Z.zip` on the Driftile GitHub Release
+1. Put the new `Driftile-vX.Y.Z.zip` in `downloads/` and remove the old zip
 2. Update `data-version` / `data-download` in `index.html` and `ja/driftile/index.html`, plus version text and the Download button `href`
 3. Recapture Options screenshots when the sheet changes
 4. Update this README
