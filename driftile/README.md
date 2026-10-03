@@ -6,6 +6,10 @@ Public URL: `https://negativespace.works/driftile/`
 
 Current build: **2.0.4** (`downloads/Driftile-v2.0.4.zip`).
 
+Download URL on the product pages: `/driftile/downloads/Driftile-v2.0.4.zip` (hosted in this repo; no separate GitHub Release asset).
+
+The zip includes a code-signed `.saver`. It is not notarized; the Install section keeps the Terminal / `xattr` path.
+
 Chrome and type follow the studio site (`/assets/css/site.css`). Product-only layout lives in `assets/css/product.css`.
 
 ## Local preview
