@@ -1,4 +1,4 @@
-# Driftile profile media
+# Abstrora profile media
 
 Built-in Profile 6 件のカード用素材。`kinetic.html` の capture モード（seed `20260902`）から 1280×720 で生成。
 
@@ -49,4 +49,4 @@ card.addEventListener('mouseleave', () => {
 - タッチは tap で play/pause トグル。
 - 同時に `src` を張るのは最大 1 本（他は `data-src` のまま）。
 
-再生成は driftile リポで `cd saver && make profile-media`。
+再生成は製品リポで `cd saver && make profile-media`。
