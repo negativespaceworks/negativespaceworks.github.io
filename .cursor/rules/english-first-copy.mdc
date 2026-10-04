@@ -12,7 +12,7 @@ Public copy (site, product pages, release notes, marketing) is written in **Engl
 1. Draft and revise English before Japanese.
 2. Do not rewrite Japanese for "natural" domestic tone. Keep English syntax, rhythm, and voice so it still feels translated.
 3. Preserve sentence boundaries: if English has two sentences, Japanese has two.
-4. Do not translate product names, commands, file names, or UI identifiers (e.g. Driftile, Download, Profile).
+4. Do not translate product names, commands, file names, or UI identifiers (e.g. Abstrora, Download, Profile).
 5. When revising, change English first, then update Japanese to match.
 
 ## Examples
