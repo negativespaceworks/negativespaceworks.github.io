@@ -76,6 +76,8 @@
   const heroVideo = document.querySelector(".product-hero__video");
   if (hero && heroVideo) {
     let shown = false;
+    let bound = false;
+    const playButton = hero.querySelector("[data-play-preview]");
     const markLive = () => {
       if (shown) {
         return;
@@ -87,11 +89,29 @@
         hero.classList.remove("is-instant");
       });
     };
-    bindLoopFade(hero, heroVideo);
-    heroVideo.addEventListener("playing", markLive);
-    const playHero = heroVideo.play();
-    if (playHero && typeof playHero.then === "function") {
-      playHero.then(markLive).catch(() => {});
+    const startHero = () => {
+      if (!heroVideo.getAttribute("src") && heroVideo.dataset.src) {
+        heroVideo.src = heroVideo.dataset.src;
+      }
+      if (!bound) {
+        bound = true;
+        bindLoopFade(hero, heroVideo);
+        heroVideo.addEventListener("playing", markLive);
+      }
+      const playHero = heroVideo.play();
+      if (playHero && typeof playHero.then === "function") {
+        playHero.then(markLive).catch(() => {
+          if (playButton) {
+            playButton.classList.add("is-needed");
+          }
+        });
+      }
+    };
+    const desktop = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (desktop) {
+      startHero();
+    } else if (playButton) {
+      playButton.addEventListener("click", startHero);
     }
   }
 
