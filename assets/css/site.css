@@ -262,6 +262,20 @@ img.product-row__icon {
   max-width: none;
 }
 
+a.product-row__icon-link {
+  display: block;
+  width: max-content;
+  color: inherit;
+  text-decoration: none;
+  line-height: 0;
+}
+
+a.product-row__icon-link:hover,
+a.product-row__icon-link:focus {
+  outline: none;
+  text-decoration: none;
+}
+
 .product-row__body {
   min-width: 0;
 }
