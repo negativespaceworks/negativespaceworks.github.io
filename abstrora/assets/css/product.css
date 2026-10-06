@@ -190,6 +190,19 @@ body.product main {
   scroll-margin-top: 1.25rem;
 }
 
+.faq__q {
+  margin: var(--space-md) 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--color-ink);
+}
+
+.section__title + .faq__q {
+  margin-top: 0;
+}
+
 .section__note a,
 .section__body a {
   text-underline-offset: 0.15em;
