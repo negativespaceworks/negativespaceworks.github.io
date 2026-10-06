@@ -184,40 +184,14 @@ body.product main {
   outline-offset: 3px;
 }
 
-.button--ghost {
-  background: transparent;
-  color: var(--color-ink);
-  box-shadow: inset 0 0 0 1px var(--color-ink);
-}
-
 #download,
 #install,
 #faq {
   scroll-margin-top: 1.25rem;
 }
 
-.faq {
-  margin: 0 0 var(--space-md);
-}
-
-.faq dt {
-  margin: 0;
-  font-weight: 600;
-  color: var(--color-ink);
-}
-
-.faq dd {
-  margin: 0.2rem 0 var(--space-sm);
-  color: var(--color-muted);
-}
-
-.faq dd:last-child {
-  margin-bottom: 0;
-}
-
 .section__note a,
-.section__body a,
-.faq a {
+.section__body a {
   text-underline-offset: 0.15em;
 }
 
