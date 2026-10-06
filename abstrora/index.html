@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abstrora — macOS screen saver</title>
-  <meta name="description" content="Abstrora is a free macOS screen saver of color fields that drift. Current version: 2.1.0.">
+  <title>Abstrora — free macOS screen saver</title>
+  <meta name="description" content="Color fields that drift. Inspired by Abstract Motion. macOS 12+. Free ZIP.">
   <link rel="canonical" href="https://negativespace.works/abstrora/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Abstrora">
-  <meta property="og:description" content="A free macOS screen saver. Color fields that drift. Version 2.1.0.">
-  <meta property="og:image" content="https://negativespace.works/abstrora/assets/img/Abstrora-Icon.png">
+  <meta property="og:title" content="Abstrora — free macOS screen saver">
+  <meta property="og:description" content="Color fields that drift. Inspired by Abstract Motion. macOS 12+. Free ZIP.">
+  <meta property="og:image" content="https://negativespace.works/abstrora/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Color fields that drift.">
   <meta property="og:url" content="https://negativespace.works/abstrora/">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ja_JP">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Abstrora">
-  <meta name="twitter:description" content="A free macOS screen saver. Color fields that drift. Version 2.1.0.">
-  <meta name="twitter:image" content="https://negativespace.works/abstrora/assets/img/Abstrora-Icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abstrora — free macOS screen saver">
+  <meta name="twitter:description" content="Color fields that drift. Inspired by Abstract Motion. macOS 12+. Free ZIP.">
+  <meta name="twitter:image" content="https://negativespace.works/abstrora/assets/img/og.png">
+  <meta name="twitter:image:alt" content="Color fields that drift.">
   <link rel="alternate" hreflang="en" href="https://negativespace.works/abstrora/">
   <link rel="alternate" hreflang="ja" href="https://negativespace.works/ja/abstrora/">
   <link rel="alternate" hreflang="x-default" href="https://negativespace.works/abstrora/">
@@ -24,8 +28,8 @@
   <link rel="icon" href="/assets/img/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260921-desktop3">
-  <link rel="stylesheet" href="/abstrora/assets/css/product.css?v=20260913-1">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20261006-copy1">
+  <link rel="stylesheet" href="/abstrora/assets/css/product.css?v=20261006-copy1">
   <script src="/assets/js/lang.js"></script>
 </head>
 <body class="product">
@@ -49,21 +53,24 @@
         <video
           class="product-hero__video"
           muted
-          autoplay
           playsinline
-          preload="auto"
+          preload="none"
           poster="/abstrora/assets/hero/catch.png"
-          src="/abstrora/assets/hero/catch.mp4">
+          data-src="/abstrora/assets/hero/catch.mp4">
         </video>
+        <button type="button" class="product-hero__play" data-play-preview>Play preview</button>
       </div>
       <div class="product-hero__copy">
-        <p class="product-hero__kicker">macOS screen saver · freeware</p>
+        <p class="product-hero__kicker">macOS screen saver · free</p>
         <h1 id="hero-title">Abstrora</h1>
-        <p class="product-hero__lede">A macOS screen saver of color fields that drift. Inspired by Abstract Motion and Mondrian’s color divisions.</p>
-        <p class="product-hero__meta">
-          <span>macOS 12+</span>
-          <span>Free</span>
-        </p>
+        <p class="product-hero__lede">A free macOS screen saver of color fields that drift. Inspired by Abstract Motion.</p>
+        <p class="trust-strip">Free · Signed &amp; notarized · Apple Silicon &amp; Intel · macOS 12+</p>
+        <p class="trust-strip__note">Preferences stay on your Mac.</p>
+        <div class="product-hero__actions">
+          <a class="button" href="#download">Download free</a>
+          <p class="product-hero__helper">Signed &amp; notarized · about 500 KB · macOS 12+</p>
+          <a class="product-hero__steps" href="#install">See install steps ↓</a>
+        </div>
       </div>
     </section>
 
@@ -164,7 +171,6 @@
 
     <section class="section" id="download" aria-labelledby="download-heading">
       <h2 class="section__title" id="download-heading">Download</h2>
-      <p class="section__note">After you click Done in Screen Saver settings, Options may not open again until you quit and reopen System Settings.</p>
       <p class="section__lede">Free. Current release is <strong>2.1.0</strong> (2026-10-04).</p>
       <p>
         <a class="button" href="/abstrora/downloads/Abstrora-v2.1.0.zip">
@@ -172,6 +178,8 @@
         </a>
       </p>
       <p class="file-meta">File <code>Abstrora-v2.1.0.zip</code> · about 500 KB · Apple Silicon / Intel · macOS 12 or later</p>
+      <p class="section__note">Free ZIP — not an App Store purchase.</p>
+      <p class="section__note">Tip: After Done, Options may not open until you quit System Settings. <a href="#install">More install tips</a></p>
 
       <h3 class="section__subtitle">Recent versions</h3>
       <div class="releases">
@@ -221,7 +229,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="install-heading">
+    <section class="section" id="install" aria-labelledby="install-heading">
       <h2 class="section__title" id="install-heading">Install</h2>
       <p class="section__lede">This build is signed and notarized.</p>
       <ol class="steps">
@@ -232,10 +240,35 @@
       <p class="section__note">Check the version in About in Options, or with <code>plutil -p ~/Library/Screen\ Savers/Abstrora.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</p>
     </section>
 
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <h2 class="section__title" id="faq-heading">FAQ</h2>
+      <dl class="faq">
+        <dt>Options after Done</dt>
+        <dd>After Done, Options may not open until you quit System Settings.</dd>
+        <dt>If Abstrora does not appear</dt>
+        <dd>Quit System Settings completely with ⌘Q and open it again.</dd>
+        <dt>Signed</dt>
+        <dd>This build is signed and notarized.</dd>
+        <dt>Version</dt>
+        <dd>Check the version in About in Options, or with <code>plutil -p ~/Library/Screen\ Savers/Abstrora.saver/Contents/Info.plist</code> and <code>CFBundleShortVersionString</code>.</dd>
+        <dt>Stuck</dt>
+        <dd>Email <a href="mailto:support@negativespace.works">support@negativespace.works</a>.</dd>
+      </dl>
+      <p class="section__body">More help is on <a href="/support/">Support</a>.</p>
+    </section>
+
     <section class="section" aria-labelledby="credits-heading">
       <h2 class="section__title" id="credits-heading">Credits</h2>
       <p class="section__body">Inspired by <em>Abstract Motion</em> (Dan Abrahams-Gessel / syntheticblue, 2001) and Piet Mondrian’s <em>Composition</em> series. Palettes also draw from Hokusai, Klimt, Hopper, Hockney, and Rothko. Not affiliated with any estate, museum, or trademark holder.</p>
       <p class="section__body">A personal project from Negative Space Works.</p>
+    </section>
+
+    <section class="section" aria-labelledby="share-heading">
+      <h2 class="section__title" id="share-heading">Share the product page</h2>
+      <p>
+        <button type="button" class="button button--ghost" data-copy-link data-copied-label="Copied">Copy link</button>
+      </p>
+      <p class="section__note" data-copy-status role="status"></p>
     </section>
   </main>
 
@@ -245,6 +278,12 @@
         <a href="/about/">About</a>
         <a href="/support/">Support</a>
         <a href="/privacy/">Privacy</a>
+      </nav>
+      <p class="site-footer__label">Social</p>
+      <nav class="site-footer__social" aria-label="Social">
+        <a href="https://x.com/negativespace_w">X</a>
+        <a href="https://bsky.app/profile/negativespaceworks.bsky.social">Bluesky</a>
+        <a href="https://www.instagram.com/negativespaceworks/">Instagram</a>
       </nav>
       <p class="site-footer__copy">© 2026 <a href="/">Negative Space Works</a></p>
     </div>
