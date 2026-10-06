@@ -314,32 +314,36 @@ a.product-row__icon-link:focus {
   text-underline-offset: 0.12em;
 }
 
-.product-row__tag {
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: var(--color-muted);
+.product-row__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
 }
 
-.product-row__tag a {
-  color: var(--color-ink);
+.product-row__actions .button {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  background: var(--color-ink);
+  color: #f2f3f5;
+  text-decoration: none;
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
 }
 
-.product-row__tag a:focus-visible {
+.product-row__actions .button:hover {
+  text-decoration: none;
+  opacity: 0.88;
+}
+
+.product-row__actions .button:focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 3px;
 }
 
 .product-row--lead .product-row__name {
   font-size: clamp(1.75rem, 3.4vw, 2.15rem);
-}
-
-.product-row--lead img.product-row__icon {
-  width: 96px;
-  height: 96px;
 }
 
 a.product-row {
@@ -425,10 +429,6 @@ a.product-row .product-row__status {
     gap: var(--space-md);
     align-items: start;
   }
-
-  .product-row--lead {
-    grid-template-columns: 96px 1fr;
-  }
 }
 
 /* Wide desktop: content band grows with the viewport; products claim the right half */
@@ -445,13 +445,13 @@ a.product-row .product-row__status {
     row-gap: var(--space-lg);
   }
 
-  .product-row {
+  .product-row,
+  .product-row--lead {
     grid-template-columns: 72px 1fr;
   }
 
   .product-row--lead {
     grid-column: 1 / -1;
-    grid-template-columns: 96px 1fr;
   }
 }
 
