@@ -8,7 +8,7 @@
   });
 
   if (download) {
-    document.querySelectorAll("#download a.button").forEach((link) => {
+    document.querySelectorAll("#download a.button, .product-hero__actions > a.button").forEach((link) => {
       link.setAttribute("href", download);
     });
   }
